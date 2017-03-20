@@ -4,16 +4,17 @@ body
 	font-size: 75%;
 	color: #333;
 	background-color: #ddd;
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+	border-style:solid;
 }
 
 h1
 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 	font-weight: normal;
 	margin: 0;
-    padding: 0;
+  padding: 0;
 }
 
 p.bubble
@@ -23,7 +24,7 @@ p.bubble
 	height: 100px;
 	text-align: center;
 	line-height: 100px;
-	margin: 60px auto;
+	margin: auto;
 	background-color: #fff;
 	border: 8px solid #666;
 	-webkit-border-radius: 30px;
@@ -73,7 +74,7 @@ img {
     display: flex;
 //   width: 600px;
     height: 175px;
-    margin-left: 25%
+  //  margin-left: 25%
     align-items:center;
     width: 800px;
 }
@@ -85,19 +86,14 @@ img {
 }
 
 .flex-container2 {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction:column;
-  flex-direction: column;
-  max-width: 100%;
-  margin-left: 22%
-  height:auto;
-  align-items: center
+	margin: 1em;
+	border-radius: 5px;
 }
 
 .flex-item2 {
     text-align: left;
     background-color: white;
+
 }
 
 .flex-container3 {
@@ -124,6 +120,7 @@ img {
 
 #space-background {
     background-image: url("images/space.png");
+		padding-top: 60px;
     width: 800px;
     height: 400px;
 }
@@ -137,7 +134,22 @@ img {
     background-color: black;
 }
 
-
 .align{
     border-radius: 0px;
+}
+
+.flex-container2 .react,
+.flex-container2 .code {
+	height: 50px;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.flex-container2 .react {
+	background-image: url('images/react.png')
+}
+
+.flex-container2 .code {
+	background-image: url('images/code.png')
 }
